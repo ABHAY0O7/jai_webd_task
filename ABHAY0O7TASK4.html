@@ -1,0 +1,197 @@
+<html>
+    <head> 
+        <title>CALCULATOR</title>
+        <style>
+            *{
+                background-color: rgb(45, 189, 189);
+            }
+            #a{
+                height: 15vh;
+                width: 100vw;
+                background-color: aquamarine;
+                position: absolute;
+                text-align: center;
+                font-size: 10vh;
+                padding: 4vh;
+                margin: 0%;
+                text-size-adjust: 10vh;
+                
+            }
+            #b{
+                height: 4vh;
+                width: 40vw;
+                background-color: gray;
+                top: 30vh;
+                left: 30vw;
+                position: absolute;
+                font-size: x-large;
+                 padding: 5px;
+            }
+            #c{
+                height: 4vh;
+                width: 40vw;
+                background-color: gray;
+                top: 40vh;
+                left: 30vw;
+                position: absolute;
+                font-size: x-large;
+                 padding: 5px;
+            }
+            #d{
+                height: 4vh;
+                width: 40vw;
+                background-color: gray;
+                top: 50vh;
+                left: 30vw;
+                position: absolute;
+                font-size: x-large;
+                 padding: 5px;
+            }
+            #e{
+                height: 4vh;
+                width: 40vw;
+                background-color: gray;
+                top: 60vh;
+                left: 30vw;
+                position: absolute;
+                font-size: x-large;
+                 padding: 5px;
+            }
+            #f{
+                height: 6vh;
+                width: 4vw;
+                background-color: red;
+                top: 29.7vh;
+                left: 62vw;
+                position: absolute;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+            #g{
+                height: 6vh;
+                width: 4vw;
+                background-color: red;
+                top: 39.7vh;
+                left: 62vw;
+                position: absolute;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+            #h{
+                height: 6vh;
+                width: 4vw;
+                background-color: red;
+                top: 49.7vh;
+                left: 62vw;
+                position: absolute;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+            #i{
+                height: 6vh;
+                width: 4vw;
+                background-color: red;
+                top: 59.7vh;
+                left: 62vw;
+                position: absolute;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+            #j{
+                height: 5.5vh;
+                width: 40vw;
+                background-color: gray;
+                top: 73vh;
+                left: 30vw;
+                position: absolute;
+                font-size: Xx-large;
+                padding: 10px;
+            }
+            #k{
+                height: 6vh;
+                width: 10vw;
+                background-color: red;
+                bottom:5vh;
+                left: 45vw;
+                position: absolute;
+                font-size: xx-large;
+                font-weight: 700;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="a">
+            JAI WEB_D CALCULATOR
+        </div>
+        <div id="b">
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TASK1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&#8377
+        </div>
+        <div id="c">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TASK2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50&#8377
+        </div>
+        <div id="d">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TASK3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&#8377
+        </div>
+        <div id="e">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TASK4 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&#8377
+        </div>
+        <div>
+            <button id="f">+</button>
+        </div>
+        <div>
+            <button id="g">+</button>
+        </div>
+        <div>
+            <button id="h">+</button>
+        </div>
+        <div>
+            <button id="i">+</button>
+        </div>
+        <div id="j">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&#8377
+        </div>
+        <div>
+            <button id="k">RESET</button>
+        </div>
+        <script>
+            var total = document.getElementById('j')
+            const task1 = document.getElementById('f');
+            task1.addEventListener('click',function1);
+            let x=0;
+            function function1(){
+                x+=10;
+                total.innerHTML= " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " +x +"&#8377";
+                
+            }
+            const task2 = document.getElementById('g');
+            task2.addEventListener('click',function2); 
+            function function2(){
+                x+=50;
+                total.innerHTML= " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " +x +"&#8377";
+                
+            }
+            const task3 = document.getElementById('h');
+            task3.addEventListener('click',function3); 
+            function function3(){
+                x+=10;
+                total.innerHTML= " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " +x +"&#8377";
+                
+            }
+            const task4 = document.getElementById('i');
+            task4.addEventListener('click',function4); 
+            function function4(){
+                x+=10;
+                total.innerHTML= " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " +x +"&#8377";
+                
+            }
+            const reset = document.getElementById('k');
+            reset.addEventListener('click',function5);
+            function function5(){
+                x==0;
+                total.innerHTML= " &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; " +0 +"&nbsp;&#8377";
+            }
+
+        </script>
+
+    </body>   
+</html> 
