@@ -5,8 +5,7 @@ body{
     background: #161718;  
 
     background-image: radial-gradient(circle at top right, #232526, transparent),
-    radial-gradient(circle at 20% 80%, #232526, transparent)
-    
+    radial-gradient(circle at 20% 80%, #232526, transparent)   
 }
 canvas {
     position: fixed;
@@ -51,7 +50,7 @@ canvas {
     position: absolute;
     font-size: x-large;
     color: #e24b37;  
-  }
+}
   #nav2{
     right: 30vw;
     top: 3vh;

@@ -5,13 +5,11 @@ const STAR_COUNT = ( window.innerWidth + window.innerHeight ) / 8,
 
 const canvas = document.querySelector( 'canvas' ),
       context = canvas.getContext( '2d' );
-
 let scale = 1, 
     width,
     height;
 
 let stars = [];
-
 let pointerX,
     pointerY;
 
